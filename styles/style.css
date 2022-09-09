@@ -1,0 +1,413 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", "Sans-serif";
+}
+/********** HEADER ***********/
+
+#page_header {
+    display: block;
+    position: fixed; 
+    will-change: auto;
+    width: 100%;
+    top: 0;
+    box-shadow: 0px 5px 6px -3px #000000;
+    z-index: 1;
+}
+
+#subheader {
+    background-color: #f58634;
+    text-align: center;
+    transition: 0.4s else;
+}
+
+#subheader span{
+    color: #373435;
+    font-size: 2.5rem;
+}
+
+#dropdown_contact_list{
+    position: absolute;
+    height: 0;
+    left: 25%;
+    opacity: 0;
+    width: 50%;
+}
+
+.active#dropdown_contact_list {
+    background-color: #FFF;
+    box-shadow: 2px 6px 15px 4px rgba(0,0,0,0.47);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    height: 100%;
+    opacity: 1;
+    transition: 0.5s ease-in;
+    width: 50%;
+    z-index: 200;
+}
+
+.dropdown-contact-item {
+    color: #373435;
+    font-size: 2em;
+    font-weight: 500;;
+    line-height: 3em;
+    margin-left: 1.5em;
+    text-align: left;
+    text-decoration: none;
+}
+
+#header_main {
+    background-color: #FFF;
+    width: 100%;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}  
+
+#header_logo {
+    width: 100%;
+    height: 100%;
+}
+
+.logo_container {
+    position: relative;
+    width: 700px;
+    height: 200px;
+}
+
+#page_logo {
+    width: 100%;
+    height: 100%;
+}
+
+.nav-container {
+    display: flex;
+}
+
+#dropdown_icon_menu {
+    width: 70%;
+}
+
+.ham-menu {
+    margin: 3vh; 
+    padding: 0.5rem;
+    z-index: 0;
+    border-radius: 0.25em;
+}
+
+.ham-menu .bar{
+    background-color: #373435;
+    border-radius: 1em;
+    width: 4em;
+    height: 0.6em;
+}
+
+.bar {
+    display: block;
+    color: #fff;
+    padding: 0;
+    margin: 0.6em;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    background-color: #fff;
+}
+
+@media (min-width: 700px) {
+  .ham-menu {
+    display: block;
+    }
+  .active .bar:nth-child(2) {
+    opacity: 0;
+    }
+  .active .bar:nth-child(1) {
+    transform: translateY(1.3em) rotate(-315deg);
+    width: 4em;
+    }
+  .active .bar:nth-child(3) {
+    transform: translateY(-1.1em) rotate(-45deg);
+    width: 4em;
+    }
+  .active {
+    transition: 0.1s linear;
+    z-index: 100;
+    }
+}
+
+.dropdown-menu {
+    background-color: #3f3d3d81;
+    backdrop-filter: blur(10px) saturate(120%);
+    -webkit-backdrop-filter: blur(12px) saturate(200%);
+    display: inline-block;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    text-align: left;
+    transition: 0.33s ease;
+    width: 0;
+}
+
+.dropdown-menu li{
+    list-style: none;
+}
+
+.nav-links{
+    color: #FFF;
+    padding-left: 2rem;
+    text-decoration: none;
+}
+
+.active.dropdown-menu{
+    display: inline-block;
+    font-size: 1.5em;
+    line-height: 6.2rem;
+    opacity: 1;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+}
+
+.active.nav-list {
+    display: inline-block;
+    z-index: 1;
+}
+
+/********** MAIN ***********/
+
+main {
+    overflow-x: hidden;
+    margin-top: 16.3em;
+}
+
+#main_image_container {
+    position: relative;
+    width: 100%;
+    height: 60em;
+}
+
+
+#main_image { 
+    inset: 0 auto auto 50%;
+    height: 100%;
+    transform: translate(-40%, 0); 
+}
+
+.main_image_slogan {
+    color: #373435;
+    font-size: 3em;
+    font-weight: 900;
+    font-style: italic;
+    left: 2em;
+    position: absolute;
+    text-align: left;
+    top: 4em;
+    width: 10em;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 3em;
+}
+
+h3, h4{
+    color: #373435;
+    margin: 1.5em 0 1.5em 0;
+}
+
+article p{
+    font-size: 1em;
+    font-weight: 200;
+    line-height: 4em;
+    margin-block-start: 2em;
+    margin-block-end: 2em;
+}
+
+hr {
+    border: #373435a1 2px solid;
+}
+
+/********** TEAM-INFO CONTAINER **********/
+
+.section-container{
+    padding: 4em;
+    text-align: left;
+}
+
+p span {
+    color: #373435;
+    font-weight: bold;
+}
+
+#team_info h2{
+    color: #d89260;
+}
+
+.check-list-container {
+    margin: 3em 0 3em 0;
+}
+
+.check-list {
+    font-size: 0.75em;
+}
+
+.check-list li{
+    font-size: 1.1em;
+    list-style: none;
+    margin: 3em 0 3em 0;
+}
+
+.check {
+    color: #f58634;
+    font-size: 2em;
+}
+
+/********** OUTSTANDING SECTION **********/
+#destacamos {
+    background-color: #ebddc5;
+}
+
+#destacamos h2{
+    color: #373435;
+}
+
+.article-outstanding .check {
+    color: #373435;
+}
+
+.outstanding-img-container{
+    display: flex;
+    justify-content: center;
+}
+
+.outstanding-img {
+    box-shadow: 5px 5px 21px -5px #000000;
+    width: 80%;
+}
+
+/********** TRATAMIENTOS SECTION **********/
+
+#tratamientos h2{
+    color: #f58634;
+}
+
+#tratamientos h3{
+    color: #373435
+}
+
+.tratamientos-img-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 4em 0;
+}
+
+.tratamientos-img {
+    width: 45%;
+    box-shadow: 5px 5px 21px -5px #000000;
+}
+
+/********** METODOLOGÍA SECTION **********/
+#metodologia {
+    background-color: #ebddc5;
+}
+
+#metodologia h2{
+    color: #373435
+}
+
+/********** CONTACT SECTION **********/
+
+#contactanos {
+    text-align: center;
+}
+
+#contactanos h2 {
+    color: #f58634;
+}
+
+.contact-form {
+    display: grid;
+}
+
+.form-control {
+    border: #373435 3px solid;
+    border-radius: 0.5em;
+    color: #373435;
+    font-size:40px;
+    margin: 0.75em 0;
+    padding: 0.4em;
+}
+
+.form-location {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#comments_form {
+    height: 10em;
+    resize: none;
+}
+
+.button-container {
+    text-align: right;
+}
+
+#submit {
+    background-color: #f58634;
+    border: none;
+    border-radius: 0.5em;
+    color: #FFF;
+    font-size: 1.7em;
+    padding: 0.7em 0.5em;
+    width: 20%;
+}
+
+#submit:hover {
+    background-color: #db7933;
+    color: #6b6767;
+}
+
+.map-container {
+    padding: 3em 0;
+}
+
+#map {
+    border: #f58634 solid;
+    height: 30em; 
+    width: 100%;
+}
+
+/********** FOOTER **********/
+
+footer {
+    padding: 0em;
+    color: #FFF;
+    background-color: #737373;
+}
+
+h5 {
+    font-size: 0.8em;
+    margin: 3em 0;
+    padding: 0 3em;
+    text-align: center;
+}
+
+h6 {
+    background-color: #f58634;
+    font-size: 0.8rem;
+    padding: 2em;
+    text-align: center;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2em;
+}
+
+.footer-icon {
+    width: 4em;
+}
