@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", "Sans-serif";
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 15vh;
+}
+/********** HEADER ***********/
+.subheader {
+    display: none;
+}
+
+#page_header {
+    display: block;
+    position: fixed; 
+    will-change: auto;
+    width: 100%;
+    top: 0;
+    box-shadow: 0px 5px 6px -3px #000000;
+    z-index: 1;
+}
+
+#subheader_display_mobile {
+    background-color: #f58634;
+    text-align: center;
+    transition: 0.4s else;
+}
+
+#subheader_display_mobile span{
+    color: #373435;
+    font-size: 2.5rem;
+}
+
+#dropdown_contact_list{
+    position: absolute;
+    height: 0;
+    left: 25%;
+    opacity: 0;
+    width: 50%;
+}
+
+.active#dropdown_contact_list {
+    background-color: #FFF;
+    box-shadow: 2px 6px 15px 4px rgba(0,0,0,0.47);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    height: 100%;
+    opacity: 1;
+    transition: 0.5s ease-in;
+    width: 50%;
+    z-index: 200;
+}
+
+.dropdown-contact-item {
+    color: #373435;
+    font-size: 2em;
+    font-weight: 800;;
+    line-height: 3em;
+    margin-left: 1.5em;
+    text-align: left;
+    text-decoration: none;
+}
+
+#header_main {
+    background-color: #FFF;
+    width: 100%;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}  
+
+#header_logo {
+    width: 100%;
+    height: 100%;
+}
+
+.logo_container {
+    position: relative;
+    width: 700px;
+    height: 200px;
+}
+
+#page_logo {
+    width: 100%;
+    height: 100%;
+}
+
+.nav-container {
+    display: flex;
+}
+
+#dropdown_icon_menu {
+    width: 70%;
+}
+
+.ham-menu {
+    margin: 3vh; 
+    padding: 0.5rem;
+    z-index: 0;
+    border-radius: 0.25em;
+}
+
+.ham-menu .bar{
+    background-color: #373435;
+    border-radius: 1em;
+    width: 4em;
+    height: 0.6em;
+}
+
+.bar {
+    display: block;
+    color: #fff;
+    padding: 0;
+    margin: 0.6em;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    background-color: #fff;
+}
+
+@media (max-width: 1200px) {
+  .ham-menu {
+    display: block;
+    }
+  .active .bar:nth-child(2) {
+    opacity: 0;
+    }
+  .active .bar:nth-child(1) {
+    transform: translateY(1.3em) rotate(-315deg);
+    width: 4em;
+    }
+  .active .bar:nth-child(3) {
+    transform: translateY(-1.1em) rotate(-45deg);
+    width: 4em;
+    }
+  .active {
+    transition: 0.1s linear;
+    z-index: 100;
+    }
+}
+
+.dropdown-menu {
+    background-color: #FFF;
+    display: inline-block;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    text-align: left;
+    transition: 0.33s ease;
+    width: 0;
+}
+
+.dropdown-menu li{
+    list-style: none;
+}
+
+.nav-links{
+    color: #373435;
+    padding-left: 2rem;
+    text-decoration: none;
+}
+
+.active.dropdown-menu{
+    display: inline-block;
+    font-size: 2em;
+    height: 20.4em;
+    line-height: 8.2rem;
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+}
+
+.nav-list {
+    box-shadow: 0px 5px 6px -3px #000000
+}
+
+.active.nav-list {
+    display: inline-block;
+    z-index: 1;
+}
+
+/********** MAIN ***********/
+
+main {
+    overflow-x: hidden;
+    margin-top: 26.5%;
+}
+
+#main_image_container {
+    position: relative;
+    width: 100%;
+    height: 90em;
+}
+
+
+#main_image { 
+    inset: 0 auto auto 50%;
+    height: 100%;
+    margin: 0;
+    position: absolute;   
+    transform: translate(-65%, 0); 
+}
+
+.main_image_slogan {
+    color: #373435;
+    font-size: 3em;
+    font-weight: 900;
+    font-style: italic;
+    left: 2em;
+    position: absolute;
+    text-align: left;
+    top: 8em;
+    width: 10em;
+}
+
+.section-container{
+    margin: 2.5em 1.5em 2.5em 1.5em;
+}
+
+.article-team-info h2 {
+    color: #d89260;
+    font-weight: 1em;
+    font-size: 3em;
+}
+
+.article-team-info p{
+    font-size: 1.5em;
+    line-height: 3.5em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    width: 100%;
+}
+
+.info-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info-list p{   
+    font-size: 2.1em;
+    line-height: 1.2em;
+    padding: 0.5em;
+}
+
+.info-list img{
+    width: 5%;
+    height: 5%;
+}
