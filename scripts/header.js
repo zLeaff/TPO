@@ -1,10 +1,10 @@
-
-const hamMenu = document.querySelector(".ham-menu");
-const navList = document.querySelector(".nav-list");
-const dropDownMenu = document.querySelector(".dropdown-menu");
 const subHeader = document.querySelector("#subheader")
 const subHeaderDropdown = document.querySelector("#subheader_dropdown")
 const dropdownContactList = document.querySelector(".dropdown-contact-list")
+const dropdownContactItem = document.querySelector(".dropdown-contact-item")
+const hamMenu = document.querySelector(".ham-menu");
+const navList = document.querySelector(".nav-list");
+const dropDownMenu = document.querySelector(".dropdown-menu");
 
 ////////////Subheader hide/////////////
 window.addEventListener('scroll', () => {
@@ -20,6 +20,7 @@ window.addEventListener('scroll', () => {
 ////////////Subheader dropdown/////////////
 subHeaderDropdown.addEventListener("click", () => {
   dropdownContactList.classList.toggle("active")
+  dropdownContactItem.classList.toggile("active")
 });
 
 

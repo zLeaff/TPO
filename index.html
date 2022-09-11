@@ -3,9 +3,11 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=0.4">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
     <link rel="icon" href="./icons/head/head-iconx16.png">
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/footer.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap"
       rel="stylesheet"
@@ -18,12 +20,12 @@
       <div id="subheader">
         <div id="subheader_dropdown">
           <img
-            class="phone_logo"
-            src="./icons/header/phone-call.png"
+            class="subheader-icon"
+            src="./icons/header/phone-callx16.png"
             alt="phone-call"
           />
           <span>Llamanos</span>
-          <img src="./icons/arrowx24.png" alt="" />
+          <img class="subheader-icon" src="./icons/header/arrowx16.png" alt="" />
         </div>
 
         <div class="dropdown-contact-list" id="dropdown_contact_list">
@@ -41,17 +43,13 @@
 
       <div id="header_main">
         <div class="header-container">
-          <div id="header_center">
-            <div class="logo_container">
-              <a href="index.html">
+              <a class="a-logo" href="index.html">
                 <img
                   id="page_logo"
                   src="./logo/Consultorio-logo.png"
                   alt="Consultorio Codo a Codo"
                 />
               </a>
-            </div>
-          </div>
           <div class="nav-container">
           <nav id="navbar">
             <div class="ham-menu">
@@ -87,7 +85,7 @@
       <section id="main_image_container">
         <img
           id="main_image"
-          src="home-image.png"
+          src="./Images/Home-image/home-image.png"
           alt="Consultorio Codo a Codo"
         />
         <div class="main_image_slogan">
@@ -104,6 +102,9 @@
             la Implantología dental, la Estética dental, la Periodoncia y la
             Ortodoncia.
           </p>
+          <div class="outstanding-img-container">
+            <img src="" alt="" class="" >
+          </div>
           <p>
             Estudiaremos su caso y le ayudaremos a conseguir la sonrisa con la
             que siempre ha soñado.
@@ -125,7 +126,9 @@
           </div>
         </article>
       </section>
-
+      <!--         -->
+      <!-- SECTION -->  
+      <!--         -->
       <section class="section-container" id="destacamos">
         <h2>Destacamos por...</h2>
         <article class="article-outstanding">
@@ -158,8 +161,12 @@
             en nuestra cirugía.
           </p>
 
-          <div class="outstanding-img-container">
-            <img src="./Images/Destacamos por/cirugia-navegada.png" alt="Cirugía navegada - Codo a Codo" class="outstanding-img">
+          <div class="iframe-container">
+            <iframe class="ytiframe" width="90%" height="300px" src="https://www.youtube.com/embed/-ujYZpW5jpY"
+            title="X Guide animation de Nobel Biocare" frameborder="0"
+             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" rel="0"
+              allowfullscreen>
+            </iframe>                    
           </div>
 
           <div class="check-list-container">
@@ -177,12 +184,15 @@
           <p></p>
 
         </article>
-        <article class="article-outstanding"></article>
       </section>
-
+      <!--         -->
+      <!-- SECTION -->  
+      <!--         -->
       <section class="section-container" id="tratamientos">
-        <h2>Tratamientos</h3>
-        <article class="article-tratamientos">
+        <h2>Tratamientos</h2>
+        <p>En <span>Codo a Codo</span> contamos con expertos profesionales que le solucionaran
+          el caso.</p>
+        <article class="article-tratamientos" id="article_tratamientos_row">
           <h3>Implantología Dental</h3>
           <p>La <span>pérdida de una pieza dental</span> provoca problemas estéticos,
             masticatorios, cambios de posicionamiento de los dientes adyacentes, provocando
@@ -190,10 +200,8 @@
             mejor manera de recuperar estas funciones perdidas, sustituyendo una pieza, varias o
             todas, recuperando su sonrisa.
           </p>
-          <p>En <span>Codo a Codo</span> contamos con expertos profesionales que le solucionaran
-          el caso
-        </p>
-          <div class="tratamientos-img-container">
+        
+          <div class="tratamientos-img-container" >
             <img src="./Images/Tratamientos/Implantologia/implantologia1.png" alt="Implantologia -
             Codo a Codo" class="tratamientos-img">
             <img src="./Images/Tratamientos/Implantologia/implantologia-2.png" alt="Implantologia - 
@@ -202,7 +210,7 @@
           <hr>
         </article>
 
-        <article class="article-tratamientos">
+        <article class="article-tratamientos" id="article_tratamientos_rowreverse" >
           <h3>Periodoncia</h3>
           <p>La <span>Periodoncia</span> es una especialidad odontológica centrada en el
             tratamiento de las enfermedades que afacetan el tejido de soporte de los dientes, 
@@ -220,7 +228,7 @@
           <hr>
         </article>
 
-        <article class="article-tratamientos">
+        <article class="article-tratamientos" id="article_tratamientos_row">
           <h3>Endodoncia</h3>
           <p>
             Es un tratamiento que realizamos en el interior del diente con la finalidad de conservarlo.
@@ -234,12 +242,25 @@
           </div>
         </article>
       </section>
-
+      <!--         -->
+      <!-- SECTION -->  
+      <!--         -->
       <section class="section-container" id="metodologia">
         <h2>Metodología 3StepSmiles™</h2>
-        <h3>Rehabilitaciones orales en sólo 3 pasos</h3>
         <article class="article-metodologia">
-          <h4>Planificación digital</h4>
+        <div class="metodologia-desktop-container" id="metodologia-desktop-row">         
+          <p>Apostamos por las últimas tecnologías, por ello, hemos desarrollado una metodología de trabajo basada 
+            en la digitalización de los tratamientos de principio a fin, ayudándonos conseguir ser más precisos, 
+            más rápidos y más predecibles en nuestros procesos. Nuestro proceso de trabajo se traduce en los siguientes 
+            pasos: Planificación, Fase Quirúrgica y Fase Protésica.</p>
+          <div class="metodologia-img-container">
+            <img src="./Images/Metodología/3stepsmiles1.png" alt="Metodología 3StepSmiles™" class="metodologia-img">
+          </div>
+        </div>
+        </article>
+        <article class="article-metodologia">
+        <div class="metodologia-desktop-container" id="metodologia-desktop-column">
+          <h3>Planificación digital</h3>
           <p>
             Esta primer fase consiste en estudiar y planificar el caso digitalmente. Realizando
             fotografías especificas, una radiografía 3D y un escáner intraoral mediante nuestros sistemas
@@ -247,23 +268,23 @@
             una mayor presición, comfort y seguridad.
           </p>
           <hr>
-        </article>
-        <article class="article-metodologia">
-          <h4>Fase Quirúrgica</h4>
+          <h3>Fase Quirúrgica</h3>
           <p>
             Después de la primer fase, llega la fase quirúrgica. Esto nos asegura una alta precisión y
             predictibilidad del caso, ya que nos permite simular la colocación de los implantes en la posición
             deseada, evitando defectos óseos y utilizando la totalidad del hueso, adaptándonos a su anatomía.
           </p>
           <hr>
-        </article>
-        <article class="article-metodologia">
-          <h4>Fase Protésica</h4>
+          <h3>Fase Protésica</h3>
           <p>
             Hemos sustituido las prótesis híbridas por las prótesis en Peek y las prótesis de
             Metal-Porcelana por Zirconio Monolítico de nueva generación, con esto mejoramos la biocompatibilidad
             de nuestras prótesis, evitamos corrosión de metales y problemas de descascarillamiento de la porcelana.
           </p>
+          </div>
+          <div class="metodologia-img-container">
+            <img src="./Images/Metodología/sonrisa-definitiva.png" alt="Sonrisa Definitiva" class="metodologia-img">
+          </div>
         </article>
       </section>
 
@@ -277,17 +298,8 @@
             <input  type="text" name="firstname" placeholder="Nombre" class="form-control" required>
             <input  type="text" name="lastname" placeholder="Apellido" class="form-control" required>
             <input  type="text" name="phone-number" placeholder="Teléfono" class="form-control" required>
-            <!-- <div class="form-location">
-              <select id="location_control" class="form-control" required>
-                <option disabled selected value> Seleccione su provincia</option>
-              </select>
-              <select id="city_control" class="form-control" required>
-                <option disabled selected value>Seleccione su ciudad</option>
-              </select>
-            </div> -->
             <input  type="email" id="email-form" class="form-control" placeholder="Email" required>
             <textarea class="form-control" id="comments_form" placeholder="Coméntenos acerca de su problema o el tratamiento que desea""></textarea>
-            <!-- <input name="terms" value="accept-terms" type="checkbox" class="input-check" placeholder="Al utilizar este formulario aceptas nuestra Política de Privacidad."> -->
             <div class="button-container">
               <button id="submit">Enviar</button>
             </div>
@@ -300,14 +312,14 @@
       </section>
 
       <footer>
-        <h5>Nuestras redes sociales:</h5>
+        <h4>Nuestras redes sociales:</h4>
         <div class="icon-container">
           <a href="#"><img src="./icons/footer/instagram-icon.png" alt="Instagram" class="footer-icon"></a>
           <a href="#"><img src="./icons/footer/facebook-icon.png" alt="Facebook" class="footer-icon"></a>
           <a href="#"><img src="./icons/footer/whatsapp-icon.png" alt="WhatsApp" class="footer-icon"></a>
         </div>
-        <h5>© 2022 Clínica Dental Codo a Codo | Todos los derechos reservados</h5>
-        <h6>Página elaborada por alumnos de Codo a Codo</h6>
+        <h4>© 2022 Clínica Dental Codo a Codo | Todos los derechos reservados</h4>
+        <h5>Página elaborada por alumnos de Codo a Codo</h5>
       </footer>
     </main>
     <script src="./Scripts/header.js"></script>
