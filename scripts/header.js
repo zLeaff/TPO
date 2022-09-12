@@ -1,7 +1,8 @@
-const subHeader = document.querySelector("#subheader")
-const subHeaderDropdown = document.querySelector("#subheader_dropdown")
-const dropdownContactList = document.querySelector(".dropdown-contact-list")
-const dropdownContactItem = document.querySelector(".dropdown-contact-item")
+const subHeader = document.querySelector("#subheader");
+const pageLogo = document.querySelector("#page_logo");
+const subHeaderDropdown = document.querySelector("#subheader_dropdown");
+const dropdownContactList = document.querySelector(".dropdown-contact-list");
+const dropdownContactItem = document.querySelector(".dropdown-contact-item");
 const hamMenu = document.querySelector(".ham-menu");
 const navList = document.querySelector(".nav-list");
 const dropDownMenu = document.querySelector(".dropdown-menu");
@@ -11,10 +12,15 @@ window.addEventListener('scroll', () => {
   let yScroll = window.scrollY;
 
   if (yScroll > 0) {
-    subHeader.style.display = 'none'
+    subHeader.style.display ="none"
+    subHeader.style.transitionDelay = "0.33s ease"
+    pageLogo.style.width ="60%"
   } else {
     subHeader.style.display = 'block'
+    pageLogo.style.width = "100%"
+    P
   }
+
 });
 
 ////////////Subheader dropdown/////////////

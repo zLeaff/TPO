@@ -23,7 +23,7 @@ main {
     transform: translate(-50%, 0); 
 }
 
-.main_image_slogan {
+.main-image-slogan {
     color: #373435;
     font-size: 1.4em;
     font-weight: 900;
@@ -199,11 +199,6 @@ p span {
     padding: 0.4em;
 }
 
-.form-location {
-    display: flex;
-    justify-content: space-evenly;
-}
-
 #comments_form {
     height: 5em;
     resize: none;
@@ -259,28 +254,17 @@ p span {
     }
 
     #main_image_container {
-        position: relative;
-        width: 100%;
         height: 35em;
     }
     
     
     #main_image { 
-        inset: 0 auto auto 30%;
-        height: 100%;
         transform: translate(-26%, 0); 
     }
     
-    .main_image_slogan {
-        color: #373435;
-        font-size: 1.4em;
-        font-weight: 900;
-        font-style: italic;
+    .main-image-slogan {
         left: 8em;
-        position: absolute;
-        text-align: left;
         top: 6em;
-        width: 10em;
     }
 
     .section-container {
@@ -289,14 +273,15 @@ p span {
 
 }
 
-/****************************************/
-/********** MEDIA QUERY DESKTOP **********/
+/******************DESKTOP********************/
 
 @media (min-width: 1000px) {
 
+    
     main {
         margin-top: 12.4em;
     }
+
 
     #main_image_container {
         height: auto;
@@ -309,17 +294,128 @@ p span {
         width: 100%;
         transform: translate(0, 0); 
     }
+
+    .main-image-slogan {
+        font-size: 1.8em;
+        left: 4em;
+        top: 3em;
+    }
+
+    .tratamientos-img-container {
+        justify-content: space-around;  
+    }
+
+        
+    /********CONTACT-FORM********/
+
+    .contact-form {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
     
-    .main_image_slogan {
+    .form-control {
+        border-radius: 0.5em;
         color: #373435;
-        font-size: 2em;
-        font-weight: 900;
-        font-style: italic;
+        font-size: 1em;
+        margin: 0.75em 0;
+        padding: 0.7em;
+        width: 60%;
+    }
+    
+    .form-location {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    #comments_form {
+        height: 10em;
+        resize: none;
+    }
+    
+    #submit {
+        padding: 1em 2em;
+        width: 100%;
+    }
+
+    
+    .map-container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 3em 0;
+        text-align: center;
+    }
+    
+    #map {
+        width: 60%;
+    }
+}
+
+@media (min-width: 1210px) {
+    /********DESTACAMOS POR********/
+
+#destacamos h2{
+    border-bottom: #373435 2px solid ;
+}
+
+#destacamos h3{
+    text-align: center;
+}
+
+#article_oustanding_nowrap {
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin-bottom: 3em;
+}
+
+#article_oustanding_nowrap p {    
+    text-align: center;
+    width: 500px;
+}
+
+.outstanding-img {
+    width: 600px;
+    height: 30em;
+    max-width: 700px;
+}
+
+.check-list-container {
+    align-self: center;
+    margin: 0em 3em;
+}
+
+.check-list-container li{
+    margin-top: 3em;
+}
+
+.iframe-container {
+    justify-self: center;
+}
+
+.ytiframe {
+    height: 30em;
+    text-align: center;
+    width: 700px;
+}
+}
+
+
+/********** MEDIA QUERY DESKTOP min1600 **********/
+
+@media (min-width: 1600px) {
+
+    #main_image { 
+        height: auto;
+        width: 100%;
+        transform: translate(0, 0); 
+    }
+    
+    .main-image-slogan {
         left: 15em;
-        position: absolute;
-        text-align: left;
         top: 5em;
-        width: 10em;
     }
 
     .section-container {
@@ -329,14 +425,13 @@ p span {
 
     article p{
         font-size: 1.2em;
-        font-weight: 200;
         line-height: 1.7em;
         margin-block-start: 0;
         margin-block-end: 0;
     }
 
     h2 {
-        font-weight: 500;
+        font-weight: 600;
         font-size: 2.5em;
     }
 
@@ -357,28 +452,6 @@ p span {
     hr {
         display: none;
     }
-
-/********TEAM INFO********/
-
-/********DESTACAMOS POR********/
-
-#destacamos h2{
-    display: block;
-    text-align: left;
-}
-
-.article-outstanding {
-    margin: 2em 0;
-}
-
-.outstanding-img {
-    max-width: 600px;
-}
-
-.ytiframe {
-    height: 30em;
-    width: 80%;
-}
 
 /********TRATAMIENTOS********/
 
@@ -478,56 +551,3 @@ p span {
         max-width: auto;
         width: 100%;
     }
-
-/********CONTACT-FORM********/
-
-    .contact-form {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .form-control {
-        border-radius: 0.5em;
-        color: #373435;
-        font-size: 1em;
-        margin: 0.75em 0;
-        padding: 0.7em;
-        width: 60%;
-    }
-    
-    .form-location {
-        display: flex;
-        justify-content: space-evenly;
-    }
-    
-    #comments_form {
-        height: 10em;
-        resize: none;
-    }
-    
-    .button-container {
-        text-align: right;
-    }
-    
-    #submit {
-        border: none;
-        font-size: 1em;
-        padding: 1em 2em;
-        width: 100%;
-    }
-
-    
-    .map-container {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        padding: 3em 0;
-        text-align: center;
-    }
-    
-    #map {
-        height: 20em;
-        width: 60%;
-    }
-}
