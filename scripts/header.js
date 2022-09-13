@@ -14,7 +14,7 @@ window.addEventListener('scroll', () => {
   if (yScroll > 0) {
     subHeader.style.display ="none"
     subHeader.style.transitionDelay = "0.33s ease"
-    pageLogo.style.width ="60%"
+    pageLogo.style.width ="63%"
   } else {
     subHeader.style.display = 'block'
     pageLogo.style.width = "100%"
