@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
     font-family: "Poppins", "Sans-serif";
 }
 
@@ -64,7 +65,7 @@ hr {
 /********** TEAM-INFO CONTAINER **********/
 
 .section-container{
-    padding: 1.7em;
+    padding: 5em 1.7em;
     text-align: left;
 }
 
@@ -268,7 +269,7 @@ p span {
     }
 
     .section-container {
-        padding: 3em 5em;
+        padding: 7em 5em;
     }
 
 }
@@ -356,7 +357,7 @@ p span {
     /********DESTACAMOS POR********/
 
 #destacamos h2{
-    border-bottom: #373435 2px solid ;
+    border-bottom: #373435 3px solid ;
 }
 
 #destacamos h3{
@@ -405,7 +406,7 @@ p span {
 
 /********** MEDIA QUERY DESKTOP min1600 **********/
 
-@media (min-width: 1600px) {
+@media (min-width: 1450px) {
 
     #main_image { 
         height: auto;
