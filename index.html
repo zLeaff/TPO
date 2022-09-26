@@ -165,8 +165,8 @@
             <div class="iframe-container">
               <iframe class="ytiframe" width="90%" height="300px" src="https://www.youtube.com/embed/-ujYZpW5jpY"
               title="X Guide animation de Nobel Biocare" frameborder="0"
-               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" rel="0"
-                allowfullscreen>
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" rel="0"
+              allowfullscreen>
               </iframe>                    
             </div>
 
@@ -292,15 +292,37 @@
           <p>Si tiene algun problema o necesita más informacion
             puede contactarse con nosotros a través de este formulario.
           </p>
-          <form action="" class="contact-form">
-            <input  type="text" name="firstname" placeholder="Nombre" class="form-control" required>
-            <input  type="text" name="lastname" placeholder="Apellido" class="form-control" required>
-            <input  type="text" name="phone-number" placeholder="Teléfono" class="form-control" required>
-            <input  type="email" id="email-form" class="form-control" placeholder="Email" required>
-            <textarea class="form-control" id="comments_form" placeholder="Coméntenos acerca de su problema o el tratamiento que desea""></textarea>
-            <div class="button-container">
-              <button id="submit">Enviar</button>
+          <form action="" id="contact_form" class="contact-form" name="formulario">
+            <div class="form-container">
+              <input id="name_form" type="text" name="nombre" placeholder="Nombre" class="form-control">
+              <span id="name_alert" class="form-alert"></span>
             </div>
+            
+            <div class="form-container">
+              <input id="lastname_form" type="text" name="apellido" placeholder="Apellido" class="form-control">
+              <span id="lastname_alert" class="form-alert"></span>
+            </div>
+            
+            <div class="form-container">
+              <div id="form_phone_container">
+                <select name="code" id="code_area">
+                  <option id="disabled_option" value="Area" selected disabled>Area</option>
+                </select>
+                <input id="phone_form" type="text" name="telefono" placeholder="Teléfono" class="form-control">
+              </div>
+              <span id="phone_alert" class="form-alert"></span>
+            </div>
+            
+            <div class="form-container">
+              <input id="email_form" type="email" name="email"  placeholder="Email" class="form-control">
+              <span id="email_alert" class="form-alert"></span>
+            </div>
+            
+            <div class="form-container">
+              <textarea id="comments_form" placeholder="Coméntenos acerca de su problema o el tratamiento que desea" class="form-control"></textarea>
+              <span id="comments_alert" class="form-alert"></span>
+            </div>
+            <button id="submit">Enviar</button>
           </form>
           <div class="map-container">
             <h4>Nos podés encontrar acá:</h4>
@@ -320,8 +342,10 @@
         <h5>Página elaborada por alumnos de Codo a Codo</h5>
       </footer>
     </main>
-    <script src="./Scripts/header.js"></script>
-    <script src="Scripts/map.js"></script>
+    <script src="scripts/api.js"></script>
+    <script src="scripts/header.js"></script>
+    <script src="scripts/map.js"></script>
+    <script src="scripts/form.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
   </body>
 </html>

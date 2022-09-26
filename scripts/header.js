@@ -7,7 +7,7 @@ const hamMenu = document.querySelector(".ham-menu");
 const navList = document.querySelector(".nav-list");
 const dropDownMenu = document.querySelector(".dropdown-menu");
 
-////////////Subheader hide/////////////
+//Subheader hide
 window.addEventListener('scroll', () => {
   let yScroll = window.scrollY;
 
@@ -18,19 +18,18 @@ window.addEventListener('scroll', () => {
   } else {
     subHeader.style.display = 'block'
     pageLogo.style.width = "100%"
-    P
   }
 
 });
 
-////////////Subheader dropdown/////////////
+//Subheader dropdown
 subHeaderDropdown.addEventListener("click", () => {
   dropdownContactList.classList.toggle("active")
   dropdownContactItem.classList.toggile("active")
 });
 
 
-////////////Navbar dropdown menu/////////////
+//Navbar dropdown menu
 hamMenu.addEventListener("click", () => {
     hamMenu.classList.toggle("active");
     dropDownMenu.classList.toggle("active");

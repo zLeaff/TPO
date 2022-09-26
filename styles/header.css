@@ -119,7 +119,7 @@ header {
     opacity: 0;
     }
   .active .bar:nth-child(1) {
-    transform: translateY(0.78em) rotate(-315deg);
+    transform: translateY(0.8em) rotate(-315deg);
     width: 2.1em;
     }
   .active .bar:nth-child(3) {
@@ -147,8 +147,9 @@ header {
 }
 
 .dropdown-menu li{
-    top: 100%;
     list-style: none;
+    top: 100%;
+    visibility: hidden;
 }
 
 .nav-links{
@@ -170,6 +171,14 @@ header {
     display: inline-block;
     width: 100%;
 }
+
+.active.dropdown-menu li{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
 
 
 /******** MEDIA QUERY TABLET ********/
@@ -237,11 +246,11 @@ header {
           opacity: 0;
           }
         .active .bar:nth-child(1) {
-          transform: translateY(0.75em) translateX(-0.4em) rotate(-210deg);
+          transform: translateY(0.8em) translateX(-0.55em) rotate(-210deg);
           width: 1.7em;
           }
         .active .bar:nth-child(3) {
-          transform: translateY(-0.4em) translateX(0.95em) rotate(30deg);
+          transform: translateY(-0.4em) translateX(0.8em) rotate(30deg);
           width: 1.7em;
           }
         .active {
@@ -286,6 +295,7 @@ header {
     .nav-links{
         margin: 0 1em;
         padding: 0;
+        visibility: visible;
     }
 
     .nav-links:hover {

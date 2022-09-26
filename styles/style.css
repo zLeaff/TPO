@@ -4,11 +4,13 @@
     padding: 0;
     scroll-behavior: smooth;
     font-family: "Poppins", "Sans-serif";
+    -webkit-tap-highlight-color: transparent;
 }
 
 main {
     overflow-x: hidden;
     margin-top: 7.7em;
+    z-index: 1;
 }
 
 #main_image_container {
@@ -188,16 +190,48 @@ p span {
 }
 
 .contact-form {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    margin: 1em auto;
+    width: 100%;
 }
 
 .form-control {
-    border: #ea8e4c 3px solid;
+    border: #f7a062 3px solid;
     border-radius: 0.5em;
     color: #373435;
     font-size: 1em;
     margin: 0.75em 0;
-    padding: 0.4em;
+    padding: 0.6em 0;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#form_phone_container {
+    display: flex;
+    width: 100%;
+}
+
+#phone_form {
+    width: 100%;
+}
+
+#code_area {
+    border: #f7a062 3px solid;
+    border-radius: 0.5em;
+    font-size: 16px;
+    margin: 0.75em 0;
+    padding: 11.2px 1.6px;
+}
+
+.form-alert {
+    color: #d34309;
+    margin-bottom: 0.2 em;
+    text-align: left;
 }
 
 #comments_form {
@@ -205,16 +239,16 @@ p span {
     resize: none;
 }
 
-.button-container {
-    text-align: right;
-}
 
 #submit {
-    background-color: #ea8e4c;
+    align-self: center;
+    background-color: #f7a062;
     border: none;
     border-radius: 0.5em;
     color: #FFF;
+    cursor: pointer;
     font-size: 1em;
+    margin: 1em 0;
     padding: 0.7em 0.5em;
     width: 20%;
 }
@@ -308,27 +342,37 @@ p span {
 
         
     /********CONTACT-FORM********/
-
-    .contact-form {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-    }
     
     .form-control {
-        border-radius: 0.5em;
-        color: #373435;
-        font-size: 1em;
         margin: 0.75em 0;
-        padding: 0.7em;
+        padding: 0.7em 0.1em;
+        width: 70%;
+    }
+
+    .form-container {
+        align-items: center;
+        width: 100%;
+    }
+
+    #form_phone_container {
+        justify-content: center;
+    }
+
+    #phone_form {
         width: 60%;
     }
     
-    .form-location {
-        display: flex;
-        justify-content: space-evenly;
+
+    #code_area {
+        width: 10%;
+    }
+
+    .form-alert {
+        align-self: flex-start;
     }
     
+    
+
     #comments_form {
         height: 10em;
         resize: none;
@@ -336,7 +380,6 @@ p span {
     
     #submit {
         padding: 1em 2em;
-        width: 100%;
     }
 
     
@@ -349,7 +392,7 @@ p span {
     }
     
     #map {
-        width: 60%;
+        width: 70%;
     }
 }
 
@@ -406,7 +449,7 @@ p span {
 
 /********** MEDIA QUERY DESKTOP min1600 **********/
 
-@media (min-width: 1450px) {
+@media (min-width: 1350px) {
 
     #main_image { 
         height: auto;
@@ -552,3 +595,4 @@ p span {
         max-width: auto;
         width: 100%;
     }
+}    
