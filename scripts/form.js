@@ -28,10 +28,10 @@ const validarForm = (validacion) => {
     
     if (userName.value.length <= 0) {
         userName.style.borderColor = ("#d34309")
-        nameAlert.innerHTML = "Campo Obligatorio"
+        nameAlert.innerHTML = "Campo Obligatorio."
     } else if (!userName.value.match(letras)) {
         userName.style.borderColor = ("#d34309")
-        nameAlert.innerHTML = "Datos inválidos"        
+        nameAlert.innerHTML = "Nombre inválido."        
     } else {
         userName.style.borderColor = ("#f7a062")
         nameAlert.innerHTML = ""
@@ -40,10 +40,10 @@ const validarForm = (validacion) => {
 //Apellido
     if (userLastName.value.length <= 0) {
         userLastName.style.borderColor = ("#d34309")
-        lastNameAlert.innerHTML = "Campo Obligatorio"
+        lastNameAlert.innerHTML = "Campo Obligatorio."
     } else if (!userLastName.value.match(letras)) {
         userLastName.style.borderColor = ("#d34309")
-        lastNameAlert.innerHTML = "Datos inválidos"
+        lastNameAlert.innerHTML = "Apellido inválido."
     } else {
         userLastName.style.borderColor = ("#f7a062")
         lastNameAlert.innerHTML = ""
@@ -53,11 +53,9 @@ const validarForm = (validacion) => {
     if (userPhone.value.length <= 0) {
         userPhone.style.borderColor = ("#d34309")
         phoneAlert.innerHTML = "Campo Obligatorio."
-    } else if(!userPhone.value.match(numeros)){
+    } else if(!userPhone.value.match(numeros) || userPhone.value.length < 7){
         userPhone.style.borderColor = ("#d34309")
-        phoneAlert.innerHTML = "Datos inválidos"
-    } else if(userPhone.value.length < 7) {
-        phoneAlert.innerHTML = "Datos inválidos"
+        phoneAlert.innerHTML = "Teléfono inválido."
     } else {
         userPhone.style.borderColor = ("#f7a062")
         phoneAlert.innerHTML = ""
@@ -70,7 +68,7 @@ const validarForm = (validacion) => {
         userEmail.style.borderColor = ("#d34309")
         emailAlert.innerHTML  = "Campo Obligatorio."
     } else if(!emailRegex.test(userEmail.value)) {
-        emailAlert.innerHTML  = "Datos inválidos."
+        emailAlert.innerHTML  = "Correo inválido."
     } else {
         userEmail.style.borderColor = ("#f7a062")
         emailAlert.innerHTML = ""

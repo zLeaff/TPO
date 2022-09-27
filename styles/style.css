@@ -217,12 +217,13 @@ p span {
 }
 
 #phone_form {
-    width: 100%;
+    border-radius: 0 0.5em 0.5em 0;
+    width: 92%;
 }
 
 #code_area {
     border: #f7a062 3px solid;
-    border-radius: 0.5em;
+    border-radius: 0.5em 0 0 0.5em;
     font-size: 16px;
     margin: 0.75em 0;
     padding: 11.2px 1.6px;
@@ -368,7 +369,7 @@ p span {
     }
 
     .form-alert {
-        align-self: flex-start;
+        align-self: ;
     }
     
     
@@ -591,7 +592,6 @@ p span {
 
 
     .metodologia-img {
-        box-shadow: 5px 5px 21px -5px #000000;
         max-width: auto;
         width: 100%;
     }
