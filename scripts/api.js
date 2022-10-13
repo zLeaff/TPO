@@ -14,7 +14,7 @@ getData().then(res => {
     })
     codes.map((code) => {
         const option = document.createElement('option')
-        option.innerHTML = code.code
+        option.innerHTML = `- ${code.code}`
         codeArea.add(option)
     }) 
 })
