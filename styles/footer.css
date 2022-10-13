@@ -8,14 +8,16 @@ footer {
 footer h4 {
     color: #FFF;
     font-size: 0.8em;
-    margin: 1em 0;
-    padding: 0.2em 2em;
+    font-weight: 550;
+    margin: 0 0 1em 0;
+    padding: 0 2em;
     text-align: center;
 }
 
 h5 {
     background-color: #ea8e4c;
     font-size: 0.8rem;
+    font-weight: 550;
     padding: 1em;
     text-align: center;
 }
