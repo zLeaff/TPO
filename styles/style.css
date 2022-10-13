@@ -259,6 +259,10 @@ p span {
     color: #6b6767;
 }
 
+#submit:active {
+    scale: 1.05;
+}
+
 .map-container {
     padding: 3em 0;
 }
