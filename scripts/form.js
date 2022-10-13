@@ -11,7 +11,7 @@ const phoneAlert = document.getElementById('phone_alert')
 const emailAlert = document.getElementById('email_alert') 
 const commentsAlert = document.getElementById('comments_alert')
 
-const redColor = ('#831111')
+const redColor = ('#d34309')
 const orangeColor = ('#f7a062')
 
 document.addEventListener('DOMContentLoaded', function() {
