@@ -1,0 +1,615 @@
+/********** MAIN ***********/
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: "Poppins", "Sans-serif";
+    -webkit-tap-highlight-color: transparent;
+}
+
+main {
+    overflow-x: hidden;
+    margin-top: 7.7em;
+    z-index: 1;
+}
+
+#main_image_container {
+    position: relative;
+    width: 100%;
+    height: 40em;
+}
+#main_turnos_ws {
+    color: #373435;
+    font-size: 1em;
+    font-weight: 900;
+    font-style: italic;
+    left: 70em;
+    position: fixed;
+    text-align: right;
+    top: 35em;
+    width: 5em;
+}
+
+#main_image { 
+    inset: 0 auto auto 30%;
+    height: 100%;
+    transform: translate(-50%, 0); 
+}
+
+.main-image-slogan {
+    color: #373435;
+    font-size: 1.4em;
+    font-weight: 900;
+    font-style: italic;
+    left: 2em;
+    position: absolute;
+    text-align: left;
+    top: 6em;
+    width: 10em;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 1.7em;
+}
+
+h3, h4{
+    color: #373435;
+    margin: 1em 0 1em 0;
+}
+
+h4 {
+    font-size: 1.1em;
+}
+
+article p{
+    font-size: 0.9em;
+    font-weight: 200;
+    line-height: 1.8em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+hr {
+    border: #373435a1 2px solid;
+}
+
+/********** TEAM-INFO CONTAINER **********/
+
+.section-container{
+    padding: 5em 1.7em;
+    text-align: left;
+}
+
+p span {
+    color: #373435;
+    font-weight: bold;
+}
+
+#team_info h2{
+    color: #d89260;
+}
+
+.check-list-container {
+    margin: 1.5em 0 1.5em 0;
+}
+
+.check-list {
+    font-size: 0.8em;
+}
+
+.check-list li{
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5em;
+    list-style: none;
+    margin: 1.5em 0 1.5em 0;
+}
+
+.check {
+    color: #ea8e4c;
+    font-size: 1.5em;
+}
+
+/********** OUTSTANDING SECTION **********/
+#destacamos {
+    background-color: #ebddc5;
+}
+
+#destacamos h2{
+    color: #373435;
+}
+
+.article-outstanding .check {
+    color: #373435;
+}
+
+.outstanding-img-container{
+    margin: 2em 0;
+    display: flex;
+    justify-content: center;
+}
+
+.outstanding-img {
+    box-shadow: 5px 5px 21px -5px #000000;
+    max-width: 400px;
+    width: 90%;
+}
+
+.iframe-container {
+    margin: 2em 0;
+    text-align: center;
+}
+
+.ytiframe {
+    box-shadow: 5px 5px 21px -5px #000000;
+}
+
+/********** TRATAMIENTOS SECTION **********/
+
+#tratamientos h2{
+    color: #f58634;
+}
+
+#tratamientos h3{
+    color: #373435
+}
+
+.tratamientos-img-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 3em 0;
+}
+
+.tratamientos-img {
+    max-width: 375px;
+    width: 49%;
+    height: 20%;
+    box-shadow: 5px 5px 21px -5px #000000;
+}
+
+/********** METODOLOGÍA SECTION **********/
+#metodologia {
+    background-color: #ebddc5;
+}
+
+#metodologia h2{
+    color: #373435
+}
+
+.metodologia-img-container {
+    text-align: center;
+    width: 100%;
+}
+
+.metodologia-img {
+    box-shadow: 5px 5px 21px -5px #000000;
+    max-width: 450px;
+    width: 80%;
+}
+
+
+/********** CONTACT SECTION **********/
+
+#contactanos {
+    text-align: center;
+}
+
+#contactanos h2 {
+    color: #ea8e4c;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    margin: 1em auto;
+    width: 100%;
+}
+
+.form-control {
+    border: #f7a062 3px solid;
+    border-radius: 0.5em;
+    color: #373435;
+    font-size: 1em;
+    margin: 0.75em 0;
+    padding: 0.6em 0;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#form_phone_container {
+    display: flex;
+    width: 100%;
+}
+
+#phone_form {
+    border-radius: 0 0.5em 0.5em 0;
+    width: 92%;
+}
+
+#code_area {
+    border: #f7a062 3px solid;
+    border-radius: 0.5em 0 0 0.5em;
+    font-size: 1em;
+    margin: 0.75em 0;
+    padding: 11.2px 1.6px;
+}
+
+.form-alert {
+    color: #d34309;
+    margin-bottom: 0.2 em;
+    text-align: left;
+}
+
+#comments_form {
+    height: 5em;
+    resize: none;
+}
+
+
+#submit {
+    align-self: center;
+    background-color: #f7a062;
+    border: none;
+    border-radius: 0.5em;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 1em 0;
+    padding: 0.7em 0.5em;
+    width: 20%;
+}
+
+#submit:hover {
+    background-color: #db7933;
+    color: #6b6767;
+}
+
+.map-container {
+    padding: 3em 0;
+}
+
+#map {
+    border: #ea8e4c solid;
+    border-radius: 0.5em;
+    height: 20em; 
+    width: 100%;
+}
+
+@media (max-width: 400px) {
+    #main_image { 
+        transform: translate(-52%, 0); 
+    }
+}
+
+@media (min-width: 550px) and (max-width: 750px) {
+    
+    #main_image { 
+        inset: 0 auto auto 30%;
+        height: 100%;
+        transform: translate(-40%, 0); 
+    }
+
+}
+
+/****************************************/
+/********** MEDIA QUERY TABLET **********/
+
+@media (min-width: 750px) {
+
+    main {
+        margin-top: 9.7em;
+    }
+
+    #main_image_container {
+        height: 35em;
+    }
+    
+    
+    #main_image { 
+        transform: translate(-26%, 0); 
+    }
+    
+    .main-image-slogan {
+        left: 8em;
+        top: 6em;
+    }
+
+    .section-container {
+        padding: 7em 5em;
+    }
+
+}
+
+/******************DESKTOP********************/
+
+@media (min-width: 1000px) {
+
+    
+    main {
+        margin-top: 12.4em;
+    }
+
+
+    #main_image_container {
+        height: auto;
+        width: 100%;
+        height: auto;
+    }
+
+    #main_image { 
+        height: auto;
+        width: 100%;
+        transform: translate(0, 0); 
+    }
+
+    .main-image-slogan {
+        font-size: 1.8em;
+        left: 4em;
+        top: 3em;
+    }
+
+    .tratamientos-img-container {
+        justify-content: space-around;  
+    }
+
+        
+    /********CONTACT-FORM********/
+    
+    .form-control {
+        margin: 0.75em 0;
+        padding: 0.7em 0.1em;
+        width: 70%;
+    }
+
+    .form-container {
+        align-items: center;
+        width: 100%;
+    }
+
+    #form_phone_container {
+        justify-content: center;
+    }
+
+    #phone_form {
+        width: 60%;
+    }
+    
+
+    #code_area {
+        width: 10%;
+    }
+
+    .form-alert {
+        align-self: ;
+    }
+    
+    
+
+    #comments_form {
+        height: 10em;
+        resize: none;
+    }
+    
+    #submit {
+        padding: 1em 2em;
+    }
+
+    
+    .map-container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 3em 0;
+        text-align: center;
+    }
+    
+    #map {
+        width: 70%;
+    }
+}
+
+@media (min-width: 1210px) {
+    /********DESTACAMOS POR********/
+
+#destacamos h2{
+    border-bottom: #373435 3px solid ;
+}
+
+#destacamos h3{
+    text-align: center;
+}
+
+#article_oustanding_nowrap {
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin-bottom: 3em;
+}
+
+#article_oustanding_nowrap p {    
+    text-align: center;
+    width: 500px;
+}
+
+.outstanding-img {
+    width: 600px;
+    height: 30em;
+    max-width: 700px;
+}
+
+.check-list-container {
+    align-self: center;
+    margin: 0em 3em;
+}
+
+.check-list-container li{
+    margin-top: 3em;
+}
+
+.iframe-container {
+    justify-self: center;
+}
+
+.ytiframe {
+    height: 30em;
+    text-align: center;
+    width: 700px;
+}
+}
+
+
+/********** MEDIA QUERY DESKTOP min1600 **********/
+
+@media (min-width: 1350px) {
+
+    #main_image { 
+        height: auto;
+        width: 100%;
+        transform: translate(0, 0); 
+    }
+    
+    .main-image-slogan {
+        left: 15em;
+        top: 5em;
+    }
+
+    .section-container {
+        border-radius:1em;
+        margin: 1em 7em;
+    }
+
+    article p{
+        font-size: 1em;
+        line-height: 1.7em;
+        margin-block-start: 0;
+        margin-block-end: 0;
+    }
+
+    h2 {
+        font-weight: 600;
+        font-size: 2em;
+    }
+
+    h3, h4{
+        font-size: 1.4em;
+        color: #373435;
+        margin: 0.3em 0 0.3em 0;
+    }
+
+    .check-list li{
+        font-size: 1.1em;
+        font-weight: 400;
+        line-height: 1.5em;
+        list-style: none;
+        margin: 1.5em 0 1.5em 0;
+    }
+
+    hr {
+        display: none;
+    }
+
+/********TRATAMIENTOS********/
+
+#tratamientos h2{
+    color: #373435
+}
+
+.article-tratamientos {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 2em 0;
+    padding: 0 2em;
+}
+
+#article_tratamientos_rowreverse {
+    background-color: #ebddc5;
+    border-radius: 1em;
+    font-size: 0.9em;
+}
+
+#article_tratamientos_row {
+    background-color: #f1ece3;
+    border-radius: 1em;
+    flex-direction: row;
+}
+
+.article-tratamientos h3 {
+    align-self: center;
+    margin: 8em 0;
+}
+
+.article-tratamientos p {
+    align-self: center;
+    margin: 1em 5em;
+    width: 100%;
+}
+
+.tratamientos-img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1em 0;
+}
+
+.tratamientos-img {
+    width: 100%;
+    height: auto;
+    margin: 1em 0;
+    box-shadow: 5px 4px 20px 1px #000000;
+}
+
+/********METODOLOGIA********/
+    #metodologia {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .article-metodologia {
+        display: flex;
+        margin: 1em 0 1em 0;
+    }
+    
+    #metodologia-desktop-row {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+    }
+
+
+    #metodologia p {
+        align-self: center;
+        font-size: 1.1em;
+        width: 100%;
+    }
+
+    #metodologia-desktop-row img{
+        width: 100%;
+    }
+
+    #metodologia-desktop-column {
+        display: flex;
+        flex-direction: column;
+        font-size: 0.9em;
+        width: 100%;
+    }
+
+    .metodologia-img-container {
+        align-self: center;
+        padding: 0 1em;
+        width: 100%;
+    }
+
+
+
+    .metodologia-img {
+        max-width: auto;
+        width: 100%;
+    }
+}    
+
