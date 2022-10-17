@@ -25,10 +25,11 @@ header {
 }
 
 #dropdown_contact_list{
-    position: absolute;
     height: 0;
     left: 25%;
     opacity: 0;
+    position: absolute;
+    visibility: hidden;
     width: 50%;
     z-index: 2;
 }
@@ -43,6 +44,7 @@ header {
     height: auto;
     opacity: 1;
     transition: 0.5s ease-in;
+    visibility: visible;
     width: 60%;
     z-index: 200;
 }
@@ -83,7 +85,7 @@ header {
     height: 100%;
     margin-top: 0.5em;
     max-height: 90.5px;
-    width: 90%;
+    width: 100%;
     z-index: 1;
 }
 
@@ -119,11 +121,11 @@ header {
     opacity: 0;
     }
   .active .bar:nth-child(1) {
-    transform: translateY(0.8em) rotate(-315deg);
+    transform: translateX(0em) translateY(0.8em) rotate(-315deg);
     width: 2.1em;
     }
   .active .bar:nth-child(3) {
-    transform: translateY(-0.6em) rotate(-45deg);
+    transform: translateX(0em) translateY(-0.6em) rotate(-45deg);
     width: 2.1em;
     }
   .active {
@@ -177,6 +179,14 @@ header {
     visibility: visible;
 }
 
+#nav_list {
+    height: 0;
+}
+
+#navbar {
+    max-width: 44px;
+}
+
 
 
 
@@ -197,24 +207,26 @@ header {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        height: 2em;
+        height: auto;
         left: 0;
         right: 0;
         opacity: 1;
         position: relative;
+        visibility: visible;
         width: 100%;
     }
     
     .dropdown-contact-item {
+        font-size: 0.8em;
         margin: 0 1em;
         text-decoration: none;
     }
 
     .dropdown-contact-item::before {
-        position: relative;
         content: url("../icons/header/phone-callx16.png");
         padding: 0 0.3em;
-        top: 0.1em;
+        position: relative;
+        top: 0.2em;
     }   
     
     .header-container {
@@ -291,6 +303,11 @@ header {
         justify-content: center;
         padding: 0.5em;
     }
+    
+    #nav_list {
+        height: auto;
+    }
+    
 
     .nav-links{
         margin: 0 1em;

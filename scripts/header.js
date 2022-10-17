@@ -10,7 +10,7 @@ const dropDownMenu = document.querySelector(".dropdown-menu");
 //Subheader dropdown
 subHeaderDropdown.addEventListener("click", () => {
   dropdownContactList.classList.toggle("active")
-  dropdownContactItem.classList.toggile("active")
+  dropdownContactItem.classList.toggle("active")
 });
 
 
