@@ -378,12 +378,6 @@ p span {
         width: 10%;
     }
 
-    .form-alert {
-        align-self: ;
-    }
-    
-    
-
     #comments_form {
         height: 10em;
         resize: none;
@@ -552,8 +546,8 @@ p span {
 }
 
 .tratamientos-img {
-    width: 100%;
-    height: auto;
+    width: 210px;
+    height: 140px;
     margin: 1em 0;
     box-shadow: 5px 4px 20px 1px #000000;
 }
