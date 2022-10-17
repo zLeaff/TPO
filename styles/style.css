@@ -519,12 +519,18 @@ p span {
     background-color: #ebddc5;
     border-radius: 1em;
     font-size: 0.9em;
+    position: relative;
+    right: 9999px;
+    transition: all 1000ms;
 }
 
-#article_tratamientos_row {
+#article_tratamientos_row { 
     background-color: #f1ece3;
     border-radius: 1em;
     flex-direction: row;
+    left: 9999px;
+    position: relative;
+    transition: all 1000ms;
 }
 
 .article-tratamientos h3 {

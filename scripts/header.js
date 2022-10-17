@@ -7,21 +7,6 @@ const hamMenu = document.querySelector(".ham-menu");
 const navList = document.querySelector(".nav-list");
 const dropDownMenu = document.querySelector(".dropdown-menu");
 
-//Subheader hide
-window.addEventListener('scroll', () => {
-  let yScroll = window.scrollY;
-
-  if (yScroll > 0) {
-    subHeader.style.display ="none"
-    subHeader.style.transitionDelay = "0.33s ease"
-    pageLogo.style.width ="63%"
-  } else {
-    subHeader.style.display = 'block'
-    pageLogo.style.width = "100%"
-  }
-
-});
-
 //Subheader dropdown
 subHeaderDropdown.addEventListener("click", () => {
   dropdownContactList.classList.toggle("active")
