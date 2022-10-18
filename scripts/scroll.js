@@ -6,20 +6,19 @@ window.addEventListener('scroll', () => {
 
     if (yScroll > 0) {
         subHeader.style.display = "none"
-        subHeader.style.transitionDelay = "0.33s ease"
         pageLogo.style.width = "63%"
     } else {
         subHeader.style.display = 'block'
         pageLogo.style.width = "100%"
     }
 
-    if (yScroll > 2500) {
+    if (yScroll > 2400) {
         container[0].style.left = 0
     }
-    if (yScroll > 3000) {
+    if (yScroll > 2700) {
         container[1].style.right = 0
     }
-    if (yScroll > 3500) {
+    if (yScroll > 3000) {
         container[2].style.left = 0
     }
 });
